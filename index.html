@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ja">
+<HEAD>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=700">
+<script src="smoothscroll_up.js" type="text/javascript"></script> 
+
+
+
+<link rel="stylesheet" href="./litebox/css/lightbox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="./litebox/js/prototype.js"></script>
+<script type="text/javascript" src="./litebox/js/moo.fx.js"></script>
+<script type="text/javascript" src="./litebox/js/litebox-1.0.js"></script>
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@WO_LF" />
+<meta name="twitter:title" content="ゲーム開発者の地図" />
+<meta name="twitter:description" content="　『ゲーム開発者の地図』はゲーム開発者、SmokingWOLF（スモーキングウルフ）の20年に渡る開発の秘訣が詰まった一冊です。Kindleで販売中！" />
+<meta name="og:image" content="https://smokingwolf.github.io/map_of_game_dev/image/00_title.jpg" />
+
+
+<TITLE>ゲーム開発者の地図　アーカイブページ</TITLE>
+<LINK rel="stylesheet" href="map_of_game_dev.css">
+
+<style>
+/* ボディ、フォント指定 */
+body {
+  /*padding-top: 60px; /* メニューの高さ分スペース確保 */
+  margin: 0;
+  -webkit-font-smoothing: optimizeSpeed;
+  font-smooth: never;
+}
+
+/* 上部固定ナビゲーション */
+.fixed-menu {
+  background: rgba( 250, 240, 240, 0.9); /* 半透明系の淡いクール色 */
+  top: 0;
+  left: 0;  /* ★＠＠＠＠ 左のフローメニューの分 アーカイブ時は0に */
+  width:calc(100% - 0px); /* ★＠＠＠＠ 左のフローメニューの分 アーカイブ時は100％に */
+  box-sizing: border-box;
+  position: fixed;
+  padding: 6px 14px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: inline-block;
+  line-height: 1.7;
+  flex-wrap: wrap; 
+}
+
+.fixed-menu a {
+  display: inline-block; /* ブロック化して折り返せるようにする */
+  white-space: nowrap;   /* 1項目内の改行は防ぐ */
+  text-decoration: none;
+  font-weight: bold;
+  color: #004466;
+  font-size: 14px;
+  padding: 2px 8px;
+  transition: all 0.2s;
+  border-radius: 6px;
+}
+
+.fixed-menu a:hover {
+  background-color: #a5e5c6;
+  color: #002233;
+}
+
+.fixed-menu A.g:LINK,.fixed-menu A.g:VISITED{color:#48c4ac;text-decoration: none;}
+.fixed-menu A.g:HOVER,.fixed-menu A.g:ACTIVE{color: #002233;text-decoration: none;}
+
+.fixed-menu A.blue:LINK,.fixed-menu A.blue:VISITED{color:#789cff;text-decoration: none;}
+.fixed-menu A.blue:HOVER,.fixed-menu A.blue:ACTIVE{
+  background-color: #aacfff;color : #444477;text-decoration: none;}
+
+</style>
+
+
+</HEAD>
+
+<BODY onload="initLightbox()">
+
+    <!-- 上部固定メニュー -->
+  <nav class="fixed-menu"><CENTER>
+    <a href="../../../" class="blue">←ホームへ</a>
+  <SMALL>ゲーム開発者の地図</SMALL>
+    <a href="#top" class="g">タイトル</a>
+    <a href="#ss" class="g">紹介･内容見本</a>
+    <a href="#buy2" class="g">Kindle版の購入</a>
+    <a href="#buy3" class="g">紙の本</a>
+    <a href="#mokuji" class="g">内容紹介/目次リスト</a>
+
+    </CENTER>
+  </nav>
+  <!-- 上部固定メニューここまで -->
+
+<a id="top"></a>
+<BR><BR><BR>
+
+
+<DIV align="center" id="top2">
+<TABLE class="main_back">
+<TBODY>
+<TR>
+<TD nowrap width="650"><BR>
+
+
+<BR>
+      <CENTER>
+      <HR size="1" noshade class="line">
+      <B>ゲーム開発者の地図　　アーカイブページ</B><BR>
+      <HR size="1" noshade class="line">
+      <BR>
+                  <TABLE class="mmgray" cellpadding="6" cellspacing="1">
+<TBODY>
+
+                      <TR>
+            <TD class="back" nowrap align="left">
+            <B>2020/07/23　　<A class="g" href="#buy3">『ゲーム開発者の地図』 紙の本版</A> </B>を発売しました！<BR>
+            <B>2017/10/26　　<A class="g" href="#buy2">『ゲーム開発者の地図』 Kindle版</A> </B>を発売しました！</TD>
+          </TR>
+                    </TBODY>
+</TABLE>
+      <BR>
+      <TABLE cellpadding="5" cellspacing="1" class="mmgray">
+<TBODY>
+<TR>
+            <TD class="white"><IMG src="image/00_title.jpg" border="0" title="開発日誌のマスコット、ラッシー" height="500"></TD>
+            <TD class="back" nowrap valign="top" align="center"><BR>
+            <FONT class="fmg" size="-1">【タイトル】</font><BR>
+            <B>ゲーム開発者の地図<BR>
+            <FONT size="-2">～20年の個人開発から<BR>
+            学んだこと～</FONT></B><BR>
+            <BR>
+            <FONT class="fmg" size="-1">【ジャンル】</font><BR>
+            <B>ゲーム開発本</B><FONT size="-1"><BR>
+            </FONT>
+            <HR>
+            <FONT class="fmg" size="-1">【電子書籍(Kindle)】</font><BR><BR>
+            <a class="red" href="https://www.amazon.co.jp/gp/product/B076VM4ZMS/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B076VM4ZMS&linkCode=as2&tag=smokingwolf-22&linkId=ee5fbbeb5a364a023ef32b98289bb766" target="_blank"><B>Kindle電子書籍版</B><BR>
+            <B>1,080円（税込）</B></a><FONT class="fg" size="-1"><BR>
+            [Win/Android/iOS対応]
+            </FONT><BR>
+</FONT><BR>
+            <HR>
+            <FONT class="fmg" size="-1">【紙の本】</font><BR><BR>
+            <a class="red" href="https://amzn.to/3pqGeAC" target="_blank"><B>フルカラー本<BR>(Amazonペーパーバック)</B><BR>
+            <B>3,660円（税込）</B></a>
+            <BR>
+              <BR>
+            <HR size="1" noshade>
+            <BR>
+            <BR>
+            <A href="https://twitter.com/share" class="twitter-share-button" data-url="http://silversecond.net/contents/game/map_of_game_dev/" data-text="【ゲーム開発者の地図】" data-lang="ja">　</A>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></TD>
+          </TR>
+</TBODY>
+</TABLE>
+      <BR>
+      <BR>
+
+      <FONT size="-1"><BR>
+      </FONT>
+<a id="ss"></a>
+      <BR>
+      <BR>
+      <HR class="line" id="ss" size="1">
+<FONT size="+1"><B><FONT size="+2">【ゲーム開発者の地図　紹介＆内容見本】</FONT></B></FONT>
+      <HR class="line" size="1">
+            <BR>
+      <TABLE class="mmgray" cellpadding="6" cellspacing="1">
+<TBODY>
+
+                      <TR>
+            <TD class="back" nowrap align="center"><BR>
+            <B><FONT size="+1">【簡単なご紹介】</FONT></B><BR>
+            <BR>
+            『<B>ゲーム開発者の地図</B>』は、個人ゲーム開発者である<BR>
+            SmokingWOLF（スモーキングウルフ）が、<BR>
+            20年に渡る個人開発の経験から学んだ<BR>
+            「ゲームを開発する際の意図」や「考え方」、<BR>
+            「効果的だと考えている手段」の数々について記したものです。<BR>
+            <BR>
+            　ある1人のゲーム開発者は、一体どんなことを考えながら<BR>
+            ゲームをデザインしているのか？<BR>
+            『シルフェイド』シリーズから『WOLF RPGエディター』『片道勇者』の<BR>
+            開発を経て身に付けた、一つの偏った視点をご紹介します。<BR>
+            <BR>初～中級レベルの人にとっては失敗を回避するための情報があり、<BR>
+            上級者の方には復習になるかも？　<BR>
+            というようなご意見をいただいております。<BR>
+            また、読むとなぜかやる気が出ると評判です。<BR>
+            <BR>
+            興味がある方は、よければぜひお楽しみください。<BR>
+            <!--<BR>
+            <B><A href="https://twitter.com/WO_LF/timelines/1383276951683559434" target="_blank">【ご感想ツイートまとめ】</A></B><BR>-->
+            　</TD>
+          </TR>
+                    </TBODY>
+</TABLE>
+      <BR><BR>
+      以下は<B>Kindle版</B>『ゲーム開発者の地図』の内容見本です、クリックで拡大できます。<BR>
+      <BR>
+      <BR>
+      <BR>
+      <B>本文見本</B><BR>
+      <A class="g" href="image/01_screen1big.jpg" rel="lightbox[A]" title=""><IMG src="image/01_screen1.jpg" border="1"></A>　<BR>
+      <BR>
+      <BR>
+      <BR>
+      <B>コメントコーナー見本　＜状態異常とデバフの話題＞</B><BR>
+      <A class="g" href="image/01_screen2big.jpg" rel="lightbox[A]" title=""><IMG src="image/01_screen2.jpg" border="1"></A>　<BR>
+      <BR>
+      <A class="g" href="image/01_screen3big.jpg" rel="lightbox[A]" title=""><IMG src="image/01_screen3.jpg" border="1"></A>　<BR>
+      <BR>
+      <BR>
+      <BR>
+      <BR>
+<div align="right"><a href="#top" class="g">↑トップへ戻る</a>　　　</div>
+      <BR>
+      <BR>
+
+<a id="buy2">　</a>
+
+      <HR size="1" noshade class="line">
+      <FONT size="+1"><B><FONT size="+2">【電子書籍（Kindle版）を購入したい人へ】</FONT></B></FONT>
+      <HR class="line" size="1">
+      <BR>
+      Kindle版はスマートフォンやタブレット端末などがあれば<BR>
+      どこでもご覧になることができます。<BR>
+      <BR>
+      <BR>
+      <TABLE border="0" cellpadding="6" class="mmgray" cellspacing="1" width="500">
+        <TBODY>
+          <TR>
+            <TD colspan="2" align="center" height="34" class="gradLightYellow2" width="503"><B>Kindle書籍 『ゲーム開発者の地図』　購入はこちら</B></TD>
+          </TR>
+          <TR>
+            <TD valign="top" class="back" colspan="2" align="center" width="503">　<img src="http://silversecond.net/image/icon/space.gif" width="1" border="0" height="3"><BR>
+            <A class="red" target="_blank" href="https://www.amazon.co.jp/gp/product/B076VM4ZMS/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B076VM4ZMS&linkCode=as2&tag=smokingwolf-22&linkId=ee5fbbeb5a364a023ef32b98289bb766"><B><FONT size="+1">Kindle書籍『ゲーム開発者の地図』　Amazon購入ページへ<BR>
+            <BR>
+            </FONT>￥1,080 [Kindle Unlimited加入者なら￥0]</B>
+<BR>
+            <IMG src="image/02_kindle_page.jpg" border="2" width="441" height="291"></A><BR>
+            <BR>
+            <BR>
+            KindleはAndroid機器 / iPhone / iPad / Windows / Mac などで動作します。<BR>
+            先頭10％を読むことができる無料サンプルもございます。<BR>
+            　<font class="fmg"><BR>
+            </font>
+            <HR>
+            <font class="fmg"><BR>
+            </font><FONT class="fmg" size="+1"><B>【Kindle書籍を読むためにインストールが必要なソフト】</B></FONT><font class="fmg"><BR>
+            <BR>
+            この本を読むためには、Amazonのアカウントを持っている他に、<BR>
+            Windows、Android、iOSなど各端末に対応した<B>Kindle</B>のアプリケーションを<BR>
+            インストールする必要があります。<BR>
+            <BR>
+            <strong><span style="font-size:medium;"><a class="red" href="https://www.amazon.co.jp/Kindle-for-PC-Windows-%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89/dp/B011UEHYWQ" target="_blank" title="【Windows版Kindle】">【Windows(PC)版 Kindleダウンロードページ】</a></span>
+
+<BR>
+            <BR>
+            <span style="font-size:medium;"><a class="red" href="https://play.google.com/store/apps/details?id=com.amazon.kindle&amp;hl=ja" target="_blank" title="【Android版】">【Android(スマホ)版 Kindleダウンロードページ】</a></span><BR>
+            <BR>
+            <span style="font-size:medium;"><a class="red" href="https://itunes.apple.com/jp/app/kindle/id302584613?mt=8" target="_blank" title="【iOS版（iPhone他）】">【iOS版（iPhone/iPad） Kindleダウンロードページ】</a></span></strong>
+<BR>
+            <BR>
+            <BR>
+            　<BR>
+            </font></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <BR>
+      <BR>
+<div align="right"><a href="#top" class="g">↑トップへ戻る</a>　　　</div>
+      <BR>
+      <BR>
+
+
+
+
+
+
+<a id="buy3">　</a>
+
+      <HR size="1" noshade class="line">
+      <FONT size="+1"><B><FONT size="+2">【紙の本を購入したい人へ】</FONT></B></FONT>
+      <HR class="line" size="1">
+      <BR>
+      紙の本も販売しています。<BR>
+      <BR>
+      <B>紹介動画 ↓</B><BR>
+      <iframe width="460" height="260" src="https://www.youtube.com/embed/cwWYvDo_XKU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <BR>
+      <BR><BR>
+      <BR>
+      <TABLE border="0" cellpadding="6" class="mmgray" cellspacing="1" width="500">
+        <TBODY>
+          <TR>
+            <TD colspan="2" align="center" height="34" class="gradLightYellow2" width="503"><B>紙書籍版 『ゲーム開発者の地図』　購入はこちら</B></TD>
+          </TR>
+          <TR>
+            <TD valign="top" class="back" colspan="2" align="center" width="503">　<BR>
+            　「豪華版のフルカラー本」のみ販売中です。<BR>
+            　【 <B>372</B>ページ、<B>B6</B>サイズ 】<BR>
+            　<BR>
+            <BR>
+            <A target="_blank" href="https://amzn.to/3pqGeAC" class="red"><B><FONT size="+1">フルカラー版『ゲーム開発者の地図』本、購入ページへ<BR>
+            <BR>
+            ￥3,660</FONT></B>
+<BR>
+            <IMG src="image/03_color_page.jpg" border="2" width="300"></A><BR>
+            <BR>
+              ※フルカラー版の方は表紙がラミネート加工されているので頑丈です。
+            <br>
+              <BR>
+            <HR>
+            　<BR>
+              <s>　            <B><FONT size="+1">モノクロ版『ゲーム開発者の地図』本、購入ページへ<BR>
+              </FONT></B><br>
+              販売終了しました<br>
+              <BR>
+              </s><IMG src="image/03_monochro_page.jpg" border="2" width="300"><BR>
+            　            <BR>
+            <BR>※モノクロ版は表紙に「モノクロ版」マークが書かれています。<BR>
+            　            <BR>
+            <HR>
+            　<BR>
+            <BR>
+            </TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <BR>
+      <BR>
+<div align="right"><a href="#top" class="g">↑トップへ戻る</a>　　　</div>
+      <BR>
+      <BR>
+
+
+
+
+
+
+
+
+
+
+<a id="mokuji">　</a>
+<HR class="line" id="mokuji" size="1">
+<FONT size="+1"><B><FONT size="+2">【内容紹介　目次リスト】</FONT></B></FONT><BR>
+<HR class="line" size="1">
+      <BR>
+      <BR>
+      <BR>
+      以下は本書の目次のリストです。<BR>
+      <BR>
+      <BR>
+                  <TABLE class="mmgray" cellpadding="6" cellspacing="1">
+<TBODY>
+
+                      <TR>
+            <TD class="back" nowrap align="left"><FONT size="+1"><B>【目次リスト】</B></FONT><BR>
+            <BR>
+            <BR>
+            <B><FONT size="+1">◆はじめに</FONT></B><BR>
+            <BR>
+・私が開発したゲームについて<BR>
+            <BR>
+            <BR>
+            <B><FONT size="+1">◆第1章　ゲームバランス編</FONT></B><BR>
+            <BR>
+            ・「3ターン与えるダメージを1.3倍」にする補助魔法、使う？<BR>
+・バランスが崩れやすい要素×3<BR>
+・ゲームプレイの技量をレベルアップしてもらいたい！<BR>
+・コラム　状態異常の話<BR>
+・どんな武装が好み？<BR>
+・好みの武装　コメント編<BR>
+            <BR>
+            <BR>
+            <B><FONT size="+1">◆第2章　メイキング編</FONT></B><BR>
+            <BR>
+・初RPG制作で意図したこと　前･後編<BR>
+・キャラクター作りで意識すること　前･後編<BR>
+・私のゲームタイトルの付け方<BR>
+・これまで作ったゲームタイトルを振り返る<BR>
+・コラム　ゲーム開発における小粒な話<BR>
+・ゲームを完成させる作り方<BR>
+・楽しくてレベルアップが早いゲームの作り方<BR>
+・ゲーム開発中の悩みを解消するために試していること<BR>
+・座談会　永遠に遊べるゲームがあるとしたら？<BR>
+            <BR>
+            <BR>
+            <B><FONT size="+1">◆最後に</FONT></B><BR>
+            <BR>
+            <HR>
+            <BR>
+            ※各項には全7人のゲーム開発者による、本文へのコメントコーナーが掲載されています。<BR>
+            　生々しいところあり、実践的なコメントありで、ゲーム開発者を目指す方にとっても<BR>
+            　ある程度参考になることでしょう。<BR>
+            <BR>
+            ※本書は<A href="https://smokingwolf.github.io/dev_blog/archive/top/" target="_top" class="blue">開発日誌</A>内に記したゲーム開発に関する話を抜粋、読みやすく修正し、<BR>
+            　新たにコメントコーナーを追加したものです。<BR>
+            　</TD>
+          </TR>
+                    </TBODY>
+</TABLE>
+      <BR>
+      <BR>
+      <BR>
+      <BR>
+      <BR>
+<div align="right"><a href="#top" class="g">↑トップへ戻る</a>　　　</div>
+      <BR>
+      <BR>
+
+      <HR class="line">
+      <BR>
+      <B><FONT size="+1">【支援バナーについて】</FONT></B><BR>
+      <BR>
+      もしリンクしていただける方がおられましたら、以下のバナーとURLをお使いください。<BR>
+      <BR>
+      <BR>
+      ゲーム開発者の地図　バナー(200x40)：<BR>
+      <img src="http://silversecond.net/contents/game/map_of_game_dev/map_of_game_dev_banner.jpg" border="0" width="200" height="40"><BR>
+      <B><FONT size="-2">http://www.silversecond.net/contents/game/map_of_game_dev/map_of_game_dev_banner.jpg</FONT></B><BR>
+      （バナーは直リンクでご利用下さい）<BR>
+      <BR>
+      ゲーム開発者の地図　公式サイトURL：　<BR>
+      <B><FONT size="-2">http://www.silversecond.net/contents/game/map_of_game_dev/</FONT></B><BR>
+      <BR>
+      作者名：　<B>SmokingWOLF</B><BR>
+      <BR>
+
+      　</CENTER>
+      </TD>
+</TR>
+</TBODY>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<HR class="line" size="1">
+Copyright(C)　SmokingWOLF　All rights reserved
+<HR class="line" size="1">
+
+</DIV>
+</body>
+</HTML>
